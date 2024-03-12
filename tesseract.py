@@ -34,6 +34,8 @@ def recognize_handwritten_text(image_path, output_path):
 
     # Write the recognized text to the output file
     with open(output_path, 'w', encoding='utf-8') as output_file:
+    # with open(output_path, 'a', encoding='utf-8') as output_file:
+    # output_file.write("\nRecognized Text:\n")
         output_file.write(text)
 
 
